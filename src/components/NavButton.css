@@ -1,0 +1,25 @@
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 0.5em 1.2em;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 0px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  background: #19171c; /* schwarz */
+  color: var(--color-accent); /* gelb */
+}
+
+.nav-button-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}

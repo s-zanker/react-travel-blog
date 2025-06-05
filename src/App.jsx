@@ -1,12 +1,21 @@
+import { BrowserRouter, Routes, Route } from 'react-router';
+
 import './App.css';
+
+import { Dashboard } from './components/pages/Dashboard';
+import { Contact } from './components/pages/Contact';
+import { AddPost } from './components/pages/AddPost';
+import { MenuBar } from './components/MenuBar';
 
 export function App() {
   return (
-    <div className="App">
-      <h1 className="App-headline">Vite React Minimal Template</h1>
-      <p>
-        Edit <code>src/App.jsx</code> and save to test.
-      </p>
-    </div>
+    <BrowserRouter>
+      <MenuBar />
+      <Routes>
+        <Route path='/' element={<Dashboard />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/add-post' element={<AddPost />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

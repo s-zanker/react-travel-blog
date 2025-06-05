@@ -5,9 +5,23 @@
 }
 
 :root {
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-family: 'Roboto', sans-serif;
+  --font-weight: 400;
+  --line-height: 1.5;
 
-  --color-primary: #2c8166;
+  --color-primary: #19171c;
+  --color-secondary: #444444;
+  --color-accent: #dac42a;
+  --color-background: #ffffff;
+  --color-text: #212529;
+}
+
+body {
+  font-family: var(--font-family);
+  background: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
 }
