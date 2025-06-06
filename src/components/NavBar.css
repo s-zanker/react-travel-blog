@@ -4,9 +4,22 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 .nav-list li {
   height: 100%;
   display: flex;
   align-items: stretch;
+}
+
+@media (max-width: 800px) {
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-list li > * {
+    width: 100%;
+    text-align: left;
+  }
 }

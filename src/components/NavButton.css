@@ -15,8 +15,8 @@
 
 .nav-button:hover,
 .nav-button.active {
-  background: #19171c; /* schwarz */
-  color: var(--color-accent); /* gelb */
+  background: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .nav-button-icon {

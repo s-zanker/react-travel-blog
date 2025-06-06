@@ -5,7 +5,9 @@
 }
 
 :root {
-  --font-family: 'Roboto', sans-serif;
+  --font-heading: 'Quicksand', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+
   --font-weight: 400;
   --line-height: 1.5;
 
@@ -14,14 +16,30 @@
   --color-accent: #dac42a;
   --color-background: #ffffff;
   --color-text: #212529;
+
+  /*   --color-primary: #494720;
+  --color-secondary: #a9b4b8;
+  --color-third: #a9b4b8;
+  --color-accent: #dde34f;
+  --color-background: #fff;
+  --color-text: #494720; */
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-body);
   background: var(--color-background);
   color: var(--color-text);
   margin: 0;
   display: grid;
   grid-template-rows: auto auto;
+  min-height: 100vh;
   text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
 }

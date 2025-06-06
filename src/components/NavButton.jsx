@@ -2,7 +2,7 @@ import { NavLink } from 'react-router';
 
 import './NavButton.css';
 
-export function NavButton({ to, icon: Icon, children }) {
+export function NavButton({ to, Icon, children }) {
   return (
     <NavLink
       to={to}

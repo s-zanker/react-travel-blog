@@ -11,12 +11,12 @@ export function NavBar() {
           <NavButton to='/contact'>Contact</NavButton>
         </li>
         <li>
-          <NavButton to='/add-post' icon={FaPlus}>
+          <NavButton to='/add-post' Icon={FaPlus}>
             Add Post
           </NavButton>
         </li>
         <li>
-          <NavButton to='/login' icon={FaSignInAlt}>
+          <NavButton to='/login' Icon={FaSignInAlt}>
             Login
           </NavButton>
         </li>
