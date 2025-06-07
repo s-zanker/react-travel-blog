@@ -1,0 +1,15 @@
+.two-column-layout {
+  display: flex;
+}
+
+.two-column-layout > section {
+  flex: 1;
+}
+
+.dashboard-posts {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-map {
+}

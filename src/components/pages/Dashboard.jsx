@@ -1,9 +1,18 @@
+import './Dashboard.css';
+
+import { PostList } from '../PostList';
+
 export function Dashboard() {
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to the dashboard!</p>
-      <div style={{ height: '200vh' }} />
-    </div>
+    <main className='two-column-layout'>
+      <section className='dashboard-posts'>
+        <PostList />
+      </section>
+      <section className='dashboard-map'>
+        <h1>Map</h1>
+        <p>Here will be the map</p>
+        <div style={{ height: '200vh' }} />
+      </section>
+    </main>
   );
 }
