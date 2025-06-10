@@ -4,6 +4,7 @@ import './Dashboard.css';
 
 import { fetchAllPosts } from '../../api';
 import { PostList } from '../PostList';
+import { Map } from '../Map';
 
 export function Dashboard() {
   const [posts, setPosts] = useState([]);
@@ -24,9 +25,7 @@ export function Dashboard() {
         <PostList posts={posts} />
       </section>
       <section className='dashboard-map'>
-        <h1>Map</h1>
-        <p>Here will be the map</p>
-        <div style={{ height: '200vh' }} />
+        <Map />
       </section>
     </main>
   );
