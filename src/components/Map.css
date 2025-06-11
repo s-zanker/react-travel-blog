@@ -11,3 +11,53 @@
   width: 100%;
   height: 100%;
 }
+
+.map-popup {
+  font-family: sans-serif;
+  max-width: 220px;
+}
+
+.map-popup h3 {
+  margin: 0 0 5px;
+  font-size: 1em;
+}
+
+.map-popup__date {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.map-popup__author {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.map-popup__author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.map-popup__author span {
+  font-size: 0.9em;
+}
+
+.map-popup__link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.85em;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.map-popup__link:hover {
+  text-decoration: underline;
+}
+
+.map-popup__link:focus {
+  outline: none;
+  box-shadow: none;
+}

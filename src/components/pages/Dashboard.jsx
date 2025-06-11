@@ -25,7 +25,7 @@ export function Dashboard() {
         <PostList posts={posts} />
       </section>
       <section className='dashboard-map'>
-        <Map />
+        <Map posts={posts} />
       </section>
     </main>
   );
