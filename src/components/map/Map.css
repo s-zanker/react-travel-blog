@@ -1,0 +1,19 @@
+.map-wrap {
+  position: relative;
+  width: 100%;
+  height: calc(
+    100vh - 6rem
+  ); /* calculate height of the screen minus the MenuBar height = 6 rem*/
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .map-wrap {
+    height: 50vh; /* z. B. weniger Platz am Handy */
+  }
+}

@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import './Dashboard.css';
 
 import { fetchAllPosts } from '../../api';
-import { PostList } from '../PostList';
-import { Map } from '../Map';
+import { PostList } from '../posts/PostList';
+import { Map } from '../map/Map';
 
 export function Dashboard() {
   const [posts, setPosts] = useState([]);

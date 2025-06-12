@@ -1,0 +1,75 @@
+/*css Klasse von MapTiler in der das popup gerender wird*/
+.maplibregl-popup-content {
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  padding: 1rem !important;
+  font-family: inherit;
+  color: black;
+}
+/*css Klasse von MapTiler für den close btn*/
+.maplibregl-popup-close-button {
+  font-size: 1.1rem;
+}
+
+.maplibregl-popup-close-button:hover {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+.map-popup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: sans-serif;
+  max-width: 220px;
+  border-radius: 10px;
+}
+
+.map-popup h3 {
+  margin: 0 0 5px;
+  font-size: 1.2em;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.map-popup__date {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.map-popup__author {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.map-popup__author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.map-popup__author span {
+  font-size: 0.9em;
+}
+
+.map-popup__link {
+  margin-top: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.map-popup__link:hover {
+  color: var(--color-accent);
+}
+
+.map-popup__link:focus {
+  outline: none;
+  box-shadow: none;
+}

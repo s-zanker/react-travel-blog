@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 
 import './App.css';
 
-import { MenuBar } from './components/MenuBar';
+import { MenuBar } from './components/header/MenuBar';
 import { Dashboard } from './components/pages/Dashboard';
 import { Contact } from './components/pages/Contact';
 import { AddPost } from './components/pages/AddPost';
