@@ -3,7 +3,7 @@ import { BsBoxArrowUpRight } from 'react-icons/bs';
 import './Popup.css';
 
 export function Popup({ post }) {
-  const visitDate = new Date(post.visitingDate).toLocaleDateString('de-DE');
+  const visitDate = new Date(post.date).toLocaleDateString('de-DE');
 
   return (
     <div className='map-popup'>

@@ -12,8 +12,8 @@ export function PostList({ posts }) {
             id={post._id}
             image={post.image}
             title={post.title}
-            country={post.country}
-            date={post.visitingDate}
+            country={post.location.country}
+            date={post.date}
             author={post.authorInfo}
           />
         ))

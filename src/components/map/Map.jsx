@@ -39,7 +39,7 @@ export function Map({ posts }) {
   useEffect(() => {
     if (!map.current || posts.length === 0) return;
 
-    const { lat, lng } = posts[posts.length - 1].coordinates || {}; //prevents the app to stop, when lat & lng are undefined
+    const { lat, lng } = posts[posts.length - 1].location || {}; //prevents the app to stop, when lat & lng are undefined
 
     if (lat && lng) {
       map.current.flyTo({

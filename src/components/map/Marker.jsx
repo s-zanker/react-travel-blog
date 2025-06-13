@@ -8,11 +8,11 @@ import { Popup } from './Popup';
 
 export function Marker({ mapInstance, post, accentColor }) {
   useEffect(() => {
-    if (!mapInstance || !post || !post.coordinates) {
+    if (!mapInstance || !post || !post.location) {
       return;
     }
 
-    const { lat, lng } = post.coordinates;
+    const { lat, lng } = post.location;
 
     if (lat == null || lng == null) {
       console.warn(

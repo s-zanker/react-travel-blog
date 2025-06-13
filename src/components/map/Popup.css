@@ -29,6 +29,7 @@
 .map-popup h3 {
   margin: 0 0 5px;
   font-size: 1.2em;
+  text-align: left;
   text-decoration-line: underline;
   text-decoration-color: var(--color-accent);
   text-decoration-thickness: 3px;
