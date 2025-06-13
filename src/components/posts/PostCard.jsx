@@ -4,6 +4,7 @@ import { FiCalendar } from 'react-icons/fi';
 import './PostCard.css';
 
 export function PostCard({ id, image, title, country, date, author }) {
+  const visitDate = new Date(date).toLocaleDateString('de-DE');
   const navigate = useNavigate();
 
   function onClickHandler() {
@@ -18,7 +19,7 @@ export function PostCard({ id, image, title, country, date, author }) {
         <p>
           <span>{country}</span>
           <FiCalendar className='calendar-icon' />
-          <span>{date}</span>
+          <span>{visitDate}</span>
         </p>
         <div className='post-author'>
           <img src={author.img} alt='' />

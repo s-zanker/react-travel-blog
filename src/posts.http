@@ -2,3 +2,7 @@
 
 ### GET all posts
 GET {{baseUrl}}/posts
+
+### Gets a single post
+@postIdToGet = 6845b850a826b219b82a2352
+GET {{baseUrl}}/posts/{{postIdToGet}}
