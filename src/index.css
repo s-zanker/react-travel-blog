@@ -26,6 +26,15 @@
   --color-text: #494720; */
 }
 
+:focus {
+  outline: none; /* Fokus standardmäßig verstecken */
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 body {
   font-family: var(--font-body);
   background: var(--color-background);

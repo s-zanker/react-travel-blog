@@ -33,6 +33,14 @@ export function Map({ posts }) {
     const rootStyles = getComputedStyle(document.documentElement);
     const color = rootStyles.getPropertyValue('--color-accent').trim();
     setAccentColor(color);
+
+    // Cleanup beim Unmount
+    return () => {
+      if (map.current) {
+        map.current.remove();
+        map.current = null;
+      }
+    };
   }, []);
 
   //Centering the map to the last post

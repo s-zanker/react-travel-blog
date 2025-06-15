@@ -1,0 +1,12 @@
+.post-date {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+}
+.post-date__icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  font-size: large;
+}

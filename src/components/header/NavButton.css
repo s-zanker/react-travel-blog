@@ -19,7 +19,7 @@
   color: var(--color-accent);
 }
 
-.nav-button-icon {
+.nav-button__icon {
   margin-right: 0.5rem;
   font-size: 1.2em;
 }

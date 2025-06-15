@@ -8,7 +8,7 @@ export function NavButton({ to, Icon, children }) {
       to={to}
       className={({ isActive }) => 'nav-button' + (isActive ? ' active' : '')}
     >
-      {Icon && <Icon className='nav-button-icon' />}
+      {Icon && <Icon className='nav-button__icon' />}
       {children}
     </NavLink>
   );

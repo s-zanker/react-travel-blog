@@ -1,0 +1,29 @@
+.icon-button {
+  all: unset; /* entfernt ALLE Standard-Button-Stile */
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.6rem; /* vertikal | horizontal */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.icon-button__icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+.icon-button__text {
+  line-height: 1;
+}
+.icon-button:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}

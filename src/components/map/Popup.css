@@ -69,8 +69,3 @@
 .map-popup__link:hover {
   color: var(--color-accent);
 }
-
-.map-popup__link:focus {
-  outline: none;
-  box-shadow: none;
-}

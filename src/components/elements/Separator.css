@@ -1,0 +1,4 @@
+.separator {
+  color: var(--color-accent);
+  padding: 0 10px;
+}

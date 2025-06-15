@@ -6,7 +6,7 @@ import './NavBar.css';
 export function NavBar() {
   return (
     <nav>
-      <ul className='nav-list'>
+      <ul className='nav-bar'>
         <li>
           <NavButton to='/contact'>Contact</NavButton>
         </li>

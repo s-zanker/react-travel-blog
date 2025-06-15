@@ -17,7 +17,7 @@ export function MenuBar() {
   }, []);
 
   return (
-    <header className={`MenuBar ${scrolled ? 'scrolled' : 'initial'}`}>
+    <header className={`menu-bar ${scrolled ? 'scrolled' : 'initial'}`}>
       <LogoTitle scrolled={scrolled} />
       <NavBar />
     </header>

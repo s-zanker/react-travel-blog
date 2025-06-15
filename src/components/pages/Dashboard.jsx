@@ -20,11 +20,11 @@ export function Dashboard() {
   }, []);
 
   return (
-    <main className='two-column-layout'>
-      <section className='dashboard-posts'>
+    <main className='dashboard'>
+      <section className='dashboard__posts'>
         <PostList posts={posts} />
       </section>
-      <section className='dashboard-map'>
+      <section>
         <Map posts={posts} />
       </section>
     </main>

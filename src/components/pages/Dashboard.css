@@ -1,15 +1,12 @@
-.two-column-layout {
+.dashboard {
   display: flex;
 }
 
-.two-column-layout > section {
+.dashboard > section {
   flex: 1;
 }
 
-.dashboard-posts {
+.dashboard__posts {
   display: flex;
   justify-content: center;
-}
-
-.dashboard-map {
 }

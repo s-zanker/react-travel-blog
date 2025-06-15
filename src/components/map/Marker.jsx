@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import { renderToString } from 'react-dom/server';
 import * as maptilersdk from '@maptiler/sdk';
 
-import './Marker.css';
-
 import { Popup } from './Popup';
 
 export function Marker({ mapInstance, post, accentColor }) {
@@ -29,8 +27,8 @@ export function Marker({ mapInstance, post, accentColor }) {
       .setPopup(popup)
       .addTo(mapInstance);
 
+    // Cleanup: remove marker when component unmounts or props change
     return () => {
-      // Cleanup: remove marker when component unmounts or props change
       marker.remove();
     };
   }, [mapInstance, post, accentColor]); // Re-run if these change
