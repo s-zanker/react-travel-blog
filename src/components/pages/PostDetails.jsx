@@ -12,6 +12,7 @@ import { PostImage } from '../posts/PostImage';
 import { IconButton } from '../elements/IconButton';
 import { PostLocation } from '../posts/PostLocation';
 import { PostDetailsMeta } from '../posts/PostDetailsMeta';
+import { Map } from '../map/Map';
 
 export function PostDetails() {
   const [post, setPost] = useState();
@@ -66,9 +67,7 @@ export function PostDetails() {
 
       {/** Map */}
       <section>
-        <h1>Map</h1>
-        <p>Post id: {id}</p>
-        <div style={{ height: '200vh' }} />
+        <Map posts={[post]} zoomLevel={6} showDetailLink={false} />
       </section>
     </main>
   );

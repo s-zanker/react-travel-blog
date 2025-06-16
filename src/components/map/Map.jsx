@@ -9,7 +9,7 @@ import { Marker } from './Marker';
 const MAPTILER_API_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 const DEFAULT_ZOOM = 4;
 
-export function Map({ posts }) {
+export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [accentColor, setAccentColor] = useState('');
@@ -26,7 +26,7 @@ export function Map({ posts }) {
       container: mapContainer.current, //DOM element in which the map will be rendered
       style: maptilersdk.MapStyle.BRIGHT.LIGHT, //BASIC.LIGHT -> defines the styles
       center: defaultCenter, //center + zoom -> sets the starting position of the map
-      zoom: DEFAULT_ZOOM,
+      zoom: zoomLevel,
     });
 
     // Set accent color
@@ -52,7 +52,8 @@ export function Map({ posts }) {
     if (lat && lng) {
       map.current.flyTo({
         center: [lng, lat],
-        zoom: DEFAULT_ZOOM,
+        zoom: zoomLevel,
+        /*  duration: 0, */
       });
     }
   }, [posts]);
@@ -62,12 +63,14 @@ export function Map({ posts }) {
       <div ref={mapContainer} className='map' />
       {map.current &&
         accentColor &&
+        posts.length > 0 &&
         posts.map((post) => (
           <Marker
             key={post._id}
             mapInstance={map.current}
             post={post}
             accentColor={accentColor}
+            showDetailLink={showDetailLink}
           />
         ))}
     </div>

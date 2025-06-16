@@ -10,9 +10,7 @@ export function Dashboard() {
   const [posts, setPosts] = useState([]);
 
   async function loadPosts() {
-    console.log('Dashboard - loadPosts():');
     const allPosts = await fetchAllPosts();
-    console.log(allPosts);
     setPosts(allPosts);
   }
   useEffect(() => {
