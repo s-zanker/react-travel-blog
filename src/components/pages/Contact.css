@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+}
+
+.contact > section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__card {
+  margin-top: 2rem;
+}
+
+.contact__infos {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

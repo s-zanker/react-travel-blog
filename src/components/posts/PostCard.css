@@ -1,5 +1,4 @@
 .post-card {
-  flex: 0 0 250px;
   background: var(--color-background);
   border-radius: 2rem;
   cursor: pointer;

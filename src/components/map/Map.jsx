@@ -20,7 +20,7 @@ export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
 
     maptilersdk.config.apiKey = MAPTILER_API_KEY;
 
-    const defaultCenter = [13.4, 52.52]; // z.B. Berlin
+    const defaultCenter = [9.90701762676456, 53.544732673943905]; // Hamburg 53.544732673943905, 9.90701762676456
 
     map.current = new maptilersdk.Map({
       container: mapContainer.current, //DOM element in which the map will be rendered
@@ -55,6 +55,8 @@ export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
         zoom: zoomLevel,
         /*  duration: 0, */
       });
+
+      console.log(posts);
     }
   }, [posts]);
 

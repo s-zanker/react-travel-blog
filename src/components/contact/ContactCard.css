@@ -1,0 +1,51 @@
+.contact-card {
+  background: var(--color-background);
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.2s;
+  flex: 1;
+  max-width: 320px;
+  max-height: fit-content;
+  text-align: left;
+}
+.contact-card:hover {
+  transform: scale(1.05);
+}
+.contact-card:hover .post-image__thumb {
+  filter: grayscale(0%);
+}
+.contact-card__text {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-card__info {
+  font-size: 0.9em; /* Etwas kleinere Schriftgröße */
+  color: #555; /* Eine etwas hellere Textfarbe (dunkelgrau) */
+  font-style: italic; /* Kursiv stellen */
+}
+.contact-card__email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.contact-card__email-icon {
+  color: var(--color-accent);
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.contact-card__email a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.contact-card__email a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 8px;
+}
