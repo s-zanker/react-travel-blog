@@ -6,6 +6,7 @@
   padding: 1rem !important;
   font-family: inherit;
   color: black;
+  min-width: 250px;
 }
 /*css Klasse von MapTiler für den close btn*/
 .maplibregl-popup-close-button {

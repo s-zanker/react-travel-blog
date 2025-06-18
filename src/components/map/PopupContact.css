@@ -5,6 +5,8 @@
   font-family: var(--font-body);
   font-size: 0.8rem;
   border-radius: 10px;
+  min-width: 230px;
+  padding: 12px, 15px;
 }
 
 .map-popup-contact h3 {

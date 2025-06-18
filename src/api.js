@@ -1,5 +1,7 @@
 const api = '/api/v1/posts';
+const api2 = '/api/v1/authors';
 
+//Posts
 export async function fetchAllPosts() {
   const response = await fetch(api);
   const posts = await response.json();
@@ -11,6 +13,19 @@ export async function fetchPostById(id) {
   const response = await fetch(uri);
   const post = await response.json();
   return post; //returns the found post
+}
+//Authors
+export async function fetchAllAuthors() {
+  const response = await fetch(api2);
+  const authors = await response.json();
+  return authors;
+}
+
+export async function fetchAuthorById(id) {
+  const uri = `${api2}/${id}`;
+  const response = await fetch(uri);
+  const author = await response.json();
+  return author; //returns the found author
 }
 
 //TODOS:

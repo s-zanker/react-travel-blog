@@ -1,40 +1,44 @@
+import { useState, useEffect } from 'react';
+import { fetchAuthorById } from '../../api';
+
 import './Contact.css';
 
 import { ContactCard } from '../contact/ContactCard';
 import { Map } from '../map/Map';
 import { ProjectInfo } from '../contact/ProjectInfo';
 
-const contact = {
-  name: 'Codingheart',
-  email: 'codingheart@web.de',
-  instagram: 'https://www.instagram.com/thecodingheart/',
-  img: '/img/sylvia-rainbowheart.jpg',
-  info: 'Curious by nature and passionate about learning and discovering new things.',
-  jobtitel: 'Junior Fullstack Web Developer',
-  location: {
-    city: 'Hamburg',
-    country: 'Germany',
-    lng: '9.921828561927141',
-    lat: '53.554197560299826',
-  },
-};
-
 export function Contact() {
+  const id = '6845bb48ad694ea9e6f31dd0'; //Codingheart
+  //const id = '68471c2db408becd6163c336'; //Konsumrebellin
+
+  const [author, setAuthor] = useState();
+
+  async function loadAuthorById(authorId) {
+    const fetchedAuthor = await fetchAuthorById(authorId);
+    setAuthor(fetchedAuthor);
+  }
+
+  useEffect(() => {
+    loadAuthorById(id);
+  }, [id]);
+  if (!author) {
+    return <p>Author not found or still loading details...</p>;
+  }
   return (
     <main className='contact'>
       <section className='contact__card'>
         <ContactCard
-          img={contact.img}
-          name={contact.name}
-          jobtitel={contact.jobtitel}
-          info={contact.info}
-          location={contact}
-          email={contact.email}
+          img={author.img}
+          name={author.name}
+          jobtitel={author.jobtitel}
+          info={author.info}
+          location={author}
+          email={author.email}
         />
       </section>
       <section className='contact__infos'>
         <Map
-          posts={[contact]}
+          posts={[author]}
           zoomLevel={12}
           showDetailLink={false}
           isContactMap={true}
