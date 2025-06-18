@@ -1,7 +1,7 @@
 .post-author {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .post-author > img {
   width: 32px;

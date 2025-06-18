@@ -9,7 +9,12 @@ import { Marker } from './Marker';
 const MAPTILER_API_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
 const DEFAULT_ZOOM = 4;
 
-export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
+export function Map({
+  posts,
+  zoomLevel = DEFAULT_ZOOM,
+  showDetailLink,
+  isContactMap = false,
+}) {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const [accentColor, setAccentColor] = useState('');
@@ -55,8 +60,6 @@ export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
         zoom: zoomLevel,
         /*  duration: 0, */
       });
-
-      console.log(posts);
     }
   }, [posts]);
 
@@ -73,6 +76,7 @@ export function Map({ posts, zoomLevel = DEFAULT_ZOOM, showDetailLink }) {
             post={post}
             accentColor={accentColor}
             showDetailLink={showDetailLink}
+            isContactMap={isContactMap}
           />
         ))}
     </div>

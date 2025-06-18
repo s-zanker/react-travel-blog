@@ -1,7 +1,7 @@
 .post-location {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
   margin-top: 10px;
   font-weight: bold;
 }

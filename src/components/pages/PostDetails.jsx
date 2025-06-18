@@ -58,7 +58,7 @@ export function PostDetails() {
 
         {/** Blog Post Text */}
         <div className='post-details__text'>
-          <h3>{post.description}</h3>
+          <h2>{post.description}</h2>
           <p>{post.summary}</p>
         </div>
         {/** Icon & City & Country */}

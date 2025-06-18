@@ -3,8 +3,15 @@ import { renderToString } from 'react-dom/server';
 import * as maptilersdk from '@maptiler/sdk';
 
 import { Popup } from './Popup';
+import { PopupContact } from './PopupContact';
 
-export function Marker({ mapInstance, post, accentColor, showDetailLink }) {
+export function Marker({
+  mapInstance,
+  post,
+  accentColor,
+  showDetailLink,
+  isContactMap,
+}) {
   useEffect(() => {
     if (!mapInstance || !post || !post.location) {
       return;
@@ -20,7 +27,11 @@ export function Marker({ mapInstance, post, accentColor, showDetailLink }) {
     }
     // NOTE: renderToString is safe here to create HTML for MapTiler popups
     const popupHtml = renderToString(
-      <Popup post={post} showDetailLink={showDetailLink} />
+      isContactMap ? (
+        <PopupContact contact={post} />
+      ) : (
+        <Popup post={post} showDetailLink={showDetailLink} />
+      )
     );
     const popup = new maptilersdk.Popup({ offset: 25 }).setHTML(popupHtml);
 

@@ -22,6 +22,10 @@
   text-align: justify;
 }
 
+.post-details__text h2 {
+  font-size: 1.3em;
+}
+
 .post-details__text p {
   margin-top: 2rem;
 }

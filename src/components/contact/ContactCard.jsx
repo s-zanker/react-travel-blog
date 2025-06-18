@@ -1,4 +1,5 @@
 import { MdEmail } from 'react-icons/md';
+import { PiInstagramLogoFill } from 'react-icons/pi';
 
 import './ContactCard.css';
 

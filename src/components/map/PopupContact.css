@@ -1,0 +1,33 @@
+.map-popup-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  border-radius: 10px;
+}
+
+.map-popup-contact h3 {
+  margin: 0 0 15px;
+  font-size: 1.3em;
+}
+
+.map-popup-contact__author {
+  display: flex;
+  align-items: center;
+}
+.map-popup-contact__at-symbol {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.4rem;
+}
+
+.map-popup-contact__icon {
+  color: var(--color-accent);
+  font-size: 2rem;
+}
+
+.map-popup-contact a:focus,
+.map-popup-contact a:focus-visible {
+  outline: none;
+}

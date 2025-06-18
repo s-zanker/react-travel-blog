@@ -53,3 +53,11 @@ h5,
 h6 {
   font-family: var(--font-heading);
 }
+h1,
+h3 {
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}

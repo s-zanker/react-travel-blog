@@ -31,11 +31,6 @@
 .map-popup h3 {
   margin: 0 0 15px;
   font-size: 1.3em;
-  text-align: left;
-  text-decoration-line: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3px;
 }
 
 .map-popup__link {

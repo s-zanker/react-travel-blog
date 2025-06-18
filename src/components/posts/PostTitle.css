@@ -1,7 +1,3 @@
 .post-title {
   margin-top: 0px;
-  text-decoration-line: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 8px;
 }
