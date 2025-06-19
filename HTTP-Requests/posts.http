@@ -23,8 +23,8 @@ Content-Type: application/json
   "description": "My Hamburg: A city to breathe, discover and enjoy – from the river to the best cheesecake in town.",
   "summary": "Hamburg is a city close to my heart – vibrant, diverse, and calming at the same time. My favorite place is Elbstrand, where the water and tides ground me and help me unwind. In winter, I join the \"Eisbademeisters\" for cold water swims – the group energy is amazing, and nothing beats warming up afterward with a hot coffee at the Ahoi Kiosk. That’s my Saturday ritual. I love exploring the city's many neighborhoods – Ottensen, Schanze, and St. Pauli all have their own vibe. Hamburg is full of unique cafés, and I could sit in a different one every day. The best cheesecake? You'll find it near the city park at Jeff’s Cheesecake – absolutely dreamy. Hamburg never gets boring and always has something new to offer. Always worth a trip.",
   "date": "2024-03-02",
-  "thumbnail": "/img/hamburg-2-thumbnail.jpg",
-  "image": "/img/hamburg-2.jpg"
+  "thumbnail": "/img/hamburg-1-thumbnail.jpg",
+  "image": "/img/hamburg-1.jpg"
 }
 
 ### Deletes the new post above - Change the id manualy

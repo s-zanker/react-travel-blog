@@ -1,0 +1,80 @@
+/* FORM */
+.post-form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.post-form {
+  display: flex;
+  flex-wrap: wrap; /* Damit die Fieldsets umbrechen, wenn der Platz nicht ausreicht */
+  gap: 30px; /* Abstand zwischen den Fieldsets */
+  font-family: var(--font-body);
+}
+
+.post-form-container form {
+  width: 100%;
+  max-width: 1050px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-background);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post-form fieldset {
+  flex: 1; /* Fieldsets nehmen jeweils 45% der Breite des Containers ein */
+  min-width: 300px;
+  border: 1px solid var(--color-accent);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.post-form legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 0 5px;
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}
+
+.post-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.post-form input[type='text'],
+.post-form input[type='date'],
+.post-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.post-form input[type='text']:focus,
+.post-form input[type='date']:focus,
+.post-form textarea:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.post-form__submit {
+  flex-basis: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.post-form__submit:hover {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}

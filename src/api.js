@@ -53,9 +53,3 @@ export async function fetchAuthorById(id) {
   const author = await response.json();
   return author; //returns the found author
 }
-
-//TODOS:
-
-//sendAddPost(newData)
-
-//sendPostUpdate()

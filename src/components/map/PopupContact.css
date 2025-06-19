@@ -12,6 +12,7 @@
 .map-popup-contact h3 {
   margin: 0 0 15px;
   font-size: 1.3em;
+  text-align: left;
 }
 
 .map-popup-contact__author {
