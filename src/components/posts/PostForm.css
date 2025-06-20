@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 20px;
 }
 .post-form {
   display: flex;
@@ -17,7 +18,6 @@
   padding: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: var(--color-background);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -41,13 +41,15 @@
 
 .post-form label {
   display: block;
+  text-align: left;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .post-form input[type='text'],
 .post-form input[type='date'],
-.post-form textarea {
+.post-form textarea,
+.post-form select {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -58,8 +60,14 @@
 
 .post-form input[type='text']:focus,
 .post-form input[type='date']:focus,
-.post-form textarea:focus {
+.post-form textarea:focus,
+.post-form select:focus {
   outline: 2px solid var(--color-accent);
+}
+
+.post-form textarea {
+  resize: vertical;
+  min-height: 100px;
 }
 
 .post-form__submit {
@@ -72,6 +80,9 @@
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.1em;
+  font-weight: bold;
+  font-family: var(--font-body);
+  text-transform: uppercase;
 }
 
 .post-form__submit:hover {

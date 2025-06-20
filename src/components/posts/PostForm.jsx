@@ -1,10 +1,12 @@
 import './PostForm.css';
 
+const AUTHORS_DATA = [
+  { _id: '6845bb48ad694ea9e6f31dd0', name: 'Codingheart' },
+  { _id: '68471c2db408becd6163c336', name: 'Dachzelt Nomadin' },
+];
+
 export function PostForm({ addPost }) {
-  const authors = [
-    { _id: '6845bb48ad694ea9e6f31dd0', name: 'Codingheart' },
-    { _id: '68471c2db408becd6163c336', name: 'Dachzelt Nomadin' },
-  ];
+  const authors = AUTHORS_DATA;
 
   function handleFormSubmit(event) {
     event.preventDefault();
@@ -37,7 +39,7 @@ export function PostForm({ addPost }) {
           <fieldset>
             <legend>Travel Information</legend>
             <label htmlFor='title'>Title:</label>
-            <input id='title' name='title' placeholder='Title' type='text' />
+            <input id='title' name='title' type='text' />
 
             <label htmlFor='date'>Date:</label>
             <input id='date' name='date' type='date' />
@@ -53,6 +55,31 @@ export function PostForm({ addPost }) {
               cols='33'
               placeholder='A short summary of the post...'
             ></textarea>
+          </fieldset>
+
+          <fieldset>
+            <legend>Location Details</legend>
+            <label htmlFor='city'>City:</label>
+            <input id='city' name='city' type='text' />
+
+            <label htmlFor='country'>Country:</label>
+            <input id='country' name='country' type='text' />
+
+            <label htmlFor='lng'>lng:</label>
+            <input
+              id='lng'
+              name='lng'
+              type='text'
+              placeholder='9.921828561927141'
+            />
+
+            <label htmlFor='lat'>lat:</label>
+            <input
+              id='lat'
+              name='lat'
+              type='text'
+              placeholder='53.554197560299826'
+            />
           </fieldset>
 
           <fieldset>
@@ -84,25 +111,6 @@ export function PostForm({ addPost }) {
                 </option>
               ))}
             </select>
-          </fieldset>
-          <fieldset>
-            <legend>Location Details</legend>
-            <label htmlFor='city'>City:</label>
-            <input id='city' name='city' type='text' placeholder='City' />
-
-            <label htmlFor='country'>Country:</label>
-            <input
-              id='country'
-              name='country'
-              type='text'
-              placeholder='Country'
-            />
-
-            <label htmlFor='lng'>lng:</label>
-            <input id='lng' name='lng' type='text' />
-
-            <label htmlFor='lat'>lat:</label>
-            <input id='lat' name='lat' type='text' />
           </fieldset>
 
           <button className='post-form__submit' type='submit'>
