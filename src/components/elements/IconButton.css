@@ -8,7 +8,6 @@
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
-  margin-bottom: 0.5rem;
   padding: 0.3rem 0.6rem; /* vertikal | horizontal */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
