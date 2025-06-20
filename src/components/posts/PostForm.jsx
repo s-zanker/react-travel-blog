@@ -1,21 +1,30 @@
 import { useNavigate } from 'react-router';
-import { useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
+import { fetchAllAuthors } from '../../api';
 import { IconButton } from '../elements/IconButton';
 import { IoChevronBackCircle } from 'react-icons/io5';
 import { PostTitle } from '../posts/PostTitle';
 
 import './PostForm.css';
 
-const AUTHORS_DATA = [
-  { _id: '6845bb48ad694ea9e6f31dd0', name: 'Codingheart' },
-  { _id: '68471c2db408becd6163c336', name: 'Dachzelt Nomadin' },
-];
-
 export function PostForm({ addPost }) {
-  const authors = AUTHORS_DATA;
+  const [authors, setAuthors] = useState();
   const formRef = useRef(null);
   const navigate = useNavigate();
+
+  async function loadAuthors() {
+    const fetchedAuthors = await fetchAllAuthors();
+    setAuthors(fetchedAuthors);
+  }
+
+  useEffect(() => {
+    loadAuthors();
+  }, []);
+
+  if (!authors) {
+    return <p>Authors not found or still loading details...</p>;
+  }
 
   function handleCancelBtnClick() {
     formRef.current.reset();

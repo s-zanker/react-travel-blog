@@ -32,7 +32,6 @@ export function Contact() {
           name={author.name}
           jobtitel={author.jobtitel}
           info={author.info}
-          location={author}
           email={author.email}
         />
       </section>

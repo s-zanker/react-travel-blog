@@ -1,12 +1,11 @@
 import { MdEmail } from 'react-icons/md';
-import { PiInstagramLogoFill } from 'react-icons/pi';
 
 import './ContactCard.css';
 
 import { PostTitle } from '../posts/PostTitle';
 import { PostImage } from '../posts/PostImage';
 
-export function ContactCard({ img, name, jobtitel, info, email, location }) {
+export function ContactCard({ img, name, jobtitel, info, email }) {
   function onClickHandler() {
     window.location.href = `mailto:${email}`;
   }
