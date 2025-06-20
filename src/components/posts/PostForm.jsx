@@ -107,7 +107,7 @@ export function PostForm({ addPost }) {
                 id='lng'
                 name='lng'
                 type='text'
-                placeholder='9.921828561927141'
+                placeholder='e.g. 9.921828561927141'
               />
 
               <label htmlFor='lat'>lat:</label>
@@ -115,7 +115,7 @@ export function PostForm({ addPost }) {
                 id='lat'
                 name='lat'
                 type='text'
-                placeholder='53.554197560299826'
+                placeholder='e.g. 53.554197560299826'
               />
             </fieldset>
 
@@ -124,16 +124,24 @@ export function PostForm({ addPost }) {
               <label htmlFor='image'>Image:</label>
               <select id='image' name='image'>
                 <option value=''>--Please select a image--</option>
-                <option value='/img/hamburg-2.jpg'>Hamburg Elbstrand</option>
+                <option value='/img/st-peter-ording.jpg'>
+                  St. Peter Ording Strand
+                </option>
+                <option value='/img/hegau.jpg'>Hegau Sundowner</option>
+                <option value='/img/rimini.jpg'>Rimini Strand</option>
                 <option value='/img/placeholder.jpg'>Placeholder Image</option>
               </select>
 
               <label htmlFor='thumbnail'>Thumbnail:</label>
               <select id='thumbnail' name='thumbnail'>
                 <option value=''>--Please select a thumbnail--</option>
-                <option value='/img/hamburg-2-thumbnail.jpg'>
-                  Hamburg Elbstrand thumbnail
+                <option value='/img/st-peter-ording-thumbnail.jpg'>
+                  St. Peter Ording Strand
                 </option>
+                <option value='/img/hegau-thumbnail.jpg'>
+                  Hegau Sundowner
+                </option>
+                <option value='/img/rimini-thumbnail.jpg'>Rimini Strand</option>
                 <option value='/img/placeholder.jpg'>
                   Placeholder thumbnail
                 </option>
