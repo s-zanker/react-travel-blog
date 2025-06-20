@@ -76,10 +76,10 @@ export function PostForm({ addPost }) {
             <fieldset>
               <legend>Travel Information</legend>
               <label htmlFor='title'>Title:</label>
-              <input id='title' name='title' type='text' />
+              <input id='title' name='title' type='text' required />
 
               <label htmlFor='date'>Date:</label>
-              <input id='date' name='date' type='date' />
+              <input id='date' name='date' type='date' required />
 
               <label htmlFor='description'>Description:</label>
               <input id='description' name='description' type='text' />
@@ -122,7 +122,7 @@ export function PostForm({ addPost }) {
             <fieldset>
               <legend>Media & Author</legend>
               <label htmlFor='image'>Image:</label>
-              <select id='image' name='image'>
+              <select id='image' name='image' required>
                 <option value=''>--Please select a image--</option>
                 <option value='/img/st-peter-ording.jpg'>
                   St. Peter Ording Strand
@@ -133,7 +133,7 @@ export function PostForm({ addPost }) {
               </select>
 
               <label htmlFor='thumbnail'>Thumbnail:</label>
-              <select id='thumbnail' name='thumbnail'>
+              <select id='thumbnail' name='thumbnail' required>
                 <option value=''>--Please select a thumbnail--</option>
                 <option value='/img/st-peter-ording-thumbnail.jpg'>
                   St. Peter Ording Strand
@@ -148,7 +148,7 @@ export function PostForm({ addPost }) {
               </select>
 
               <label htmlFor='authorId'>Author:</label>
-              <select id='authorId' name='authorId'>
+              <select id='authorId' name='authorId' required>
                 <option value=''>--Please select an author--</option>
                 {authors.map((author) => (
                   <option key={author._id} value={author._id}>

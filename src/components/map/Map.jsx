@@ -7,7 +7,7 @@ import './Map.css';
 import { Marker } from './Marker';
 
 const MAPTILER_API_KEY = import.meta.env.VITE_MAPTILER_API_KEY;
-const DEFAULT_ZOOM = 3;
+const DEFAULT_ZOOM = 4;
 
 export function Map({
   posts,
