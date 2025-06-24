@@ -1,7 +1,10 @@
 import { useRef, useEffect, useState } from 'react';
 
 import * as maptilersdk from '@maptiler/sdk';
-import '@maptiler/sdk/dist/maptiler-sdk.css'; // MapTiler SDK CSS importieren
+import { GeocodingControl } from '@maptiler/geocoding-control/maptilersdk';
+
+import '@maptiler/sdk/dist/maptiler-sdk.css'; // MapTiler SDK CSS
+import '@maptiler/geocoding-control/style.css'; //Geocoding Controll CSS
 
 import './Map.css';
 import { Marker } from './Marker';
@@ -33,6 +36,12 @@ export function Map({
       center: defaultCenter, //center + zoom -> sets the starting position of the map
       zoom: zoomLevel,
     });
+
+    //set geocoding control search filter
+    const gc = new GeocodingControl({
+      proximity: [{ type: 'map-center' }], // results closer to map center will be shown first
+    });
+    map.current.addControl(gc);
 
     // Set accent color
     const rootStyles = getComputedStyle(document.documentElement);
