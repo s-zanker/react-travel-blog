@@ -13,8 +13,8 @@ export function AddPost() {
     console.log('AddPost.jsx - addPost() - newId: ', newId);
   }
 
-  function handleAddPost(post) {
-    addPost(post);
+  async function handleAddPost(post) {
+    await addPost(post);
     navigate('/'); //to dashboard
   }
 
