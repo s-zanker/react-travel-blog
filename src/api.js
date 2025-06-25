@@ -1,5 +1,7 @@
-const api = '/api/v1/posts';
-const api2 = '/api/v1/authors';
+const api =
+  'https://s-test-react-travel-blog-api-210021db115a.herokuapp.com/api/v1/posts';
+const api2 =
+  'https://s-test-react-travel-blog-api-210021db115a.herokuapp.com/api/v1/authors';
 
 //Posts
 export async function fetchAllPosts() {
