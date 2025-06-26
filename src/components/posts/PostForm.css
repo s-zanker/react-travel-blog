@@ -85,7 +85,7 @@
 .post-form__actions {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   gap: 1rem;
 }

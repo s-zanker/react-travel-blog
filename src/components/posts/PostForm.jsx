@@ -61,8 +61,8 @@ export function PostForm({ addPost }) {
   //Event-Handler Functions
   //MapTiler Geocoding Search
   function handleSearchChange(e) {
-    const query = e.target.value.trim(); //Trim whitespace from query
-    setSearchQuery(query);
+    const rawValue = e.target.value;
+    setSearchQuery(rawValue);
 
     // Reset validation states when user types
     resetLocationStates();
@@ -72,8 +72,10 @@ export function PostForm({ addPost }) {
       clearTimeout(searchTimeoutRef.current);
     }
 
+    const queryForApi = rawValue.trim(); //trim only tor the API call
+
     // Don't send a request if the query is too short
-    if (query.length < 3) {
+    if (queryForApi.length < 3) {
       setSearchResults([]); // Clear results if the input is too short
       return;
     }
@@ -81,7 +83,7 @@ export function PostForm({ addPost }) {
     // Set a new timer
     searchTimeoutRef.current = setTimeout(async () => {
       //Geocoding request
-      const results = await maptilersdk.geocoding.forward(query, {
+      const results = await maptilersdk.geocoding.forward(queryForApi, {
         autocomplete: true,
         fuzzyMatch: true,
         limit: 5,
@@ -257,22 +259,24 @@ export function PostForm({ addPost }) {
             <label htmlFor='image'>Image:</label>
             <select id='image' name='image' required>
               <option value=''>--Please select a image--</option>
-              <option value='/img/st-peter-ording.jpg'>
-                St. Peter Ording Strand
-              </option>
-              <option value='/img/hegau.jpg'>Hegau Sundowner</option>
-              <option value='/img/rimini.jpg'>Rimini Strand</option>
+              <option value='/img/bodensee.jpg'>Bodensee</option>
+              <option value='/img/konstanz.jpg'>Konstanz</option>
+              <option value='/img/legau-a-d-iller.jpg'>Legau a.d. Iller</option>
+              <option value='/img/hamburg-2.jpg'>Ahoi Kiosk a.d. Elbe</option>
               <option value='/img/placeholder.jpg'>Placeholder Image</option>
             </select>
 
             <label htmlFor='thumbnail'>Thumbnail:</label>
             <select id='thumbnail' name='thumbnail' required>
               <option value=''>--Please select a thumbnail--</option>
-              <option value='/img/st-peter-ording-thumbnail.jpg'>
-                St. Peter Ording Strand
+              <option value='/img/bodensee-thumbnail.jpg'>Bodensee</option>
+              <option value='/img/konstanz-thumbnail.jpg'>Konstanz</option>
+              <option value='/img/legau-a-d-iller-thumbnail.jpg'>
+                Legau a.d. Iller
               </option>
-              <option value='/img/hegau-thumbnail.jpg'>Hegau Sundowner</option>
-              <option value='/img/rimini-thumbnail.jpg'>Rimini Strand</option>
+              <option value='/img/hamburg-2-thumbnail.jpg'>
+                Ahoi Kiosk a.d. Elbe
+              </option>
               <option value='/img/placeholder.jpg'>
                 Placeholder thumbnail
               </option>
