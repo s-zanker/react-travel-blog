@@ -1,7 +1,12 @@
 @baseUrl = http://localhost:8080/api/v1
 
+@urlHeroku = https://s-test-react-travel-blog-api-210021db115a.herokuapp.com/api/v1
+
 ### GET all authors
 GET {{baseUrl}}/authors
+
+### GET all authors from heroku server
+GET {{urlHeroku}}/authors
 
 ### Gets a the author "Codingheart"
 @postIdToGet = 6845bb48ad694ea9e6f31dd0

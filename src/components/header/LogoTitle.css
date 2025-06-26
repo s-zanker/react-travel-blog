@@ -21,3 +21,13 @@
   margin-right: 0.5em;
   vertical-align: middle;
 }
+@media (max-width: 1125px) {
+  .logo-title {
+    border-bottom-left-radius: 0rem;
+  }
+}
+@media (max-width: 400px) {
+  .logo-title {
+    white-space: wrap;
+  }
+}

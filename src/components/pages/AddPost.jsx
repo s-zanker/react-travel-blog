@@ -15,12 +15,12 @@ export function AddPost() {
 
   async function handleAddPost(post) {
     await addPost(post);
-    navigate('/'); //to dashboard
+    navigate('/dashboard');
   }
 
   return (
-    <div>
+    <main className='add-post'>
       <PostForm addPost={(post) => handleAddPost(post)} />
-    </div>
+    </main>
   );
 }

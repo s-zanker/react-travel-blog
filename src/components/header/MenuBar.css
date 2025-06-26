@@ -5,8 +5,8 @@
   background-color: var(--color-accent);
   border-bottom-left-radius: 2rem;
   height: 6rem;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  right: 0px;
   z-index: 1000;
   transition: width 0.8s ease-in-out, margin-left 0.8s ease-in-out;
 }
@@ -21,8 +21,8 @@
   margin-left: auto;
 }
 
-@media (max-width: 800px) {
-  .menu-bar {
-    height: auto;
+@media (max-width: 1125px) {
+  .menu-bar.initial {
+    width: 100%;
   }
 }

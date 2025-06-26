@@ -111,7 +111,7 @@ export function PostForm({ addPost }) {
   }
   function handleCancelBtnClick() {
     resetFormAndState(); //reset form and state
-    navigate('/'); //navigate to dashboard
+    navigate('/dashboard');
   }
   function handleFormSubmit(event) {
     event.preventDefault();

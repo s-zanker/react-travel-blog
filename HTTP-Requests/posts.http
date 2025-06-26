@@ -1,7 +1,13 @@
 @baseUrl = http://localhost:8080/api/v1
 
+@urlHeroku = https://s-test-react-travel-blog-api-210021db115a.herokuapp.com/api/v1
+
+
 ### GET all posts
 GET {{baseUrl}}/posts
+
+### GET all posts from Heroku
+GET {{urlHeroku}}/posts
 
 ### Gets a single post
 @postIdToGet = 6845b850a826b219b82a2352

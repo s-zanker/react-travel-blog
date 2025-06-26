@@ -13,13 +13,6 @@
   align-items: stretch;
 }
 
-@media (max-width: 800px) {
-  .nav-bar {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .nav-bar li > * {
-    width: 100%;
-    text-align: left;
-  }
+@media (max-width: 875px) {
+  /* Burger Menu*/
 }

@@ -8,6 +8,9 @@ export function NavBar() {
     <nav>
       <ul className='nav-bar'>
         <li>
+          <NavButton to='/dashboard'>Explore</NavButton>
+        </li>
+        <li>
           <NavButton to='/contact'>Contact</NavButton>
         </li>
         <li>

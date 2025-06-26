@@ -26,7 +26,7 @@ export function PostDetails() {
   }
 
   function handleBackBtnClick() {
-    navigate('/');
+    navigate('/dashboard');
   }
 
   useEffect(() => {

@@ -1,3 +1,6 @@
+main.dashboard {
+  padding-top: 95px;
+}
 .dashboard {
   display: flex;
 }
