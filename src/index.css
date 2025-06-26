@@ -18,6 +18,9 @@
   --color-background: #ffffff;
   --color-text: #212529;
 
+  --header-height: 6rem;
+  --padding-top: 95px;
+
   /*   --color-primary: #494720;
   --color-secondary: #a9b4b8;
   --color-third: #a9b4b8;

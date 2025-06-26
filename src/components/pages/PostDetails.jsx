@@ -66,8 +66,8 @@ export function PostDetails() {
       </section>
 
       {/** Map */}
-      <section>
-        <Map posts={[post]} zoomLevel={6} showDetailLink={false} />
+      <section className='post-details__map'>
+        <Map posts={[post]} zoomLevel={9} showDetailLink={false} />
       </section>
     </main>
   );

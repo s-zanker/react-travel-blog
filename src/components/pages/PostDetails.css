@@ -1,5 +1,5 @@
 main.post-details {
-  padding-top: 95px;
+  padding-top: var(--padding-top);
 }
 .post-details {
   display: flex;
@@ -31,4 +31,10 @@ main.post-details {
 
 .post-details__text p {
   margin-top: 2rem;
+}
+
+.post-details__map {
+  position: sticky;
+  top: var(--header-height);
+  align-self: start;
 }

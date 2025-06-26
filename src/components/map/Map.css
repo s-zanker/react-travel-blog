@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: calc(
-    100vh - 6rem
+    100vh - var(--header-height)
   ); /* calculate height of the screen minus the MenuBar height = 6 rem*/
 }
 
@@ -12,8 +12,8 @@
   height: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .map-wrap {
-    height: 50vh; /* z. B. weniger Platz am Handy */
+    height: calc(50vh - var(--header-height));
   }
 }

@@ -1,3 +1,8 @@
 main.add-post {
-  padding-top: 95px;
+  padding-top: var(--padding-top);
+}
+
+.add-post {
+  height: 100vh;
+  overflow-y: auto;
 }

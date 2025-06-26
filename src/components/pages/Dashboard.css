@@ -1,5 +1,5 @@
 main.dashboard {
-  padding-top: 95px;
+  padding-top: var(--padding-top);
 }
 .dashboard {
   display: flex;
@@ -12,4 +12,10 @@ main.dashboard {
 .dashboard__posts {
   display: flex;
   justify-content: center;
+}
+
+.dashboard__map {
+  position: sticky;
+  top: var(--header-height);
+  align-self: start;
 }
