@@ -7,7 +7,7 @@ import { PostImage } from './PostImage';
 import { PostAuthor } from './PostAuthor';
 import { PostMeta } from './PostMeta';
 
-export function PostCard({ id, image, title, country, date, author }) {
+export function PostCard({ id, image, title, city, date, author }) {
   const navigate = useNavigate();
 
   function onClickHandler() {
@@ -18,7 +18,7 @@ export function PostCard({ id, image, title, country, date, author }) {
       <PostImage source={image} alt={title} variant='thumb' />
       <div className='post-card__text'>
         <PostTitle title={title} />
-        <PostMeta country={country} date={date} />
+        <PostMeta city={city} date={date} />
         <PostAuthor author={author} />
       </div>
     </li>

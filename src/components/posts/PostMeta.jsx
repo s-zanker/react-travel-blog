@@ -5,10 +5,10 @@ import { PostDate } from './PostDate';
 
 import './PostMeta.css';
 
-export function PostMeta({ country, date }) {
+export function PostMeta({ city, date }) {
   return (
     <div className='post-meta'>
-      <span>{country}</span>
+      <span>{city}</span>
       <Separator />
       <PostDate date={date} Icon={<FaCalendar />} />
     </div>

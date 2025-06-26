@@ -12,7 +12,7 @@ export function PostList({ posts }) {
             id={post._id}
             image={post.image}
             title={post.title}
-            country={post.location.country}
+            city={post.location.city}
             date={post.date}
             author={post.authorInfo}
           />
