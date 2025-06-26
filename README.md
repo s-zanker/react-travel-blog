@@ -8,7 +8,7 @@ The goal was to create a simple but functional blog with map integration and reu
 ## Data Persistence with MongoDB & API Integration
 All content of the Travel Blog (e.g. travel posts) is persistently stored in a MongoDB database. The data is managed through a custom-built REST API, maintained in a separate Git repository, which serves as the backend for this React application.
 
-👉 [API repository]([https://github.com/s-zanker/react-travel-blog-api)
+👉 [API repository](https://github.com/s-zanker/react-travel-blog-api)
 
 ## Install all dependencies
 
