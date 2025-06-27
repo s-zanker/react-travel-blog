@@ -6,6 +6,7 @@
   color: var(--color-accent);
   padding: 2rem;
   font-size: 1.5rem;
+  height: 6rem;
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
@@ -26,7 +27,7 @@
     border-bottom-left-radius: 0rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .logo-title {
     white-space: wrap;
   }

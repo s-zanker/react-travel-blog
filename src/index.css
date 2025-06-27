@@ -45,6 +45,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-rows: auto auto;
+  min-width: 350px;
   min-height: 100vh;
   text-align: center;
 }

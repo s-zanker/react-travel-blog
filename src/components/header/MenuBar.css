@@ -21,8 +21,22 @@
   margin-left: auto;
 }
 
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
 @media (max-width: 1125px) {
   .menu-bar.initial {
     width: 100%;
+  }
+}
+
+@media (max-width: 875px) {
+  .burger-icon {
+    display: block;
   }
 }
