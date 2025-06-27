@@ -16,10 +16,10 @@
 .post-form-container form {
   width: 100%;
   max-width: 1050px;
-  padding: 20px;
+  padding: 30px 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 8px;
+  border-radius: 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .post-form fieldset {
@@ -27,7 +27,7 @@
   min-width: 300px;
   border: 1px solid var(--color-accent);
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 1rem;
 }
 
 .post-form legend {
